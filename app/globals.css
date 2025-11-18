@@ -1,0 +1,34 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0b0f19;
+  --fg: #e5e7eb;
+  --muted: #9ca3af;
+  --brand: #6ee7b7;
+}
+
+html, body { height: 100%; }
+body {
+  /* Use plain CSS for variables */
+  background-color: var(--bg);
+  color: var(--fg);
+  background-image: radial-gradient(1000px 600px at 20% 20%, #0f172a 0%, var(--bg) 60%);
+}
+
+/* Utility helpers */
+@layer utilities {
+  .text-muted { color: var(--muted); }
+}
+
+/* Layout helpers */
+.container { @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8; }
+.section { @apply py-16 sm:py-20; }
+.h2 { @apply text-3xl sm:text-4xl font-semibold mb-6; }
+
+/* Components */
+.card { @apply bg-card border border-border rounded-xl shadow-card; }
+.badge { @apply inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1 text-sm text-fg; }
+.chip { @apply inline-block rounded-full border border-border px-2.5 py-0.5 text-xs text-fg; }
