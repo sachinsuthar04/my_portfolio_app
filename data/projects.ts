@@ -16,7 +16,7 @@ export const projects: Project[] = [
   title: 'KidZense — Preschool Learning & Play',
   blurb: 'An interactive, child-safe educational mobile world designed for early learners to spark curiosity.\n\n📚 The Learning Hub: Master phonics & ABCs, build math foundations with interactive counting, and explore the world with image recognition & text-to-speech guidance.\n\n🎮 The PlayZone: Themed matching games, cognitive memory boosts, and a vibrant digital drawing canvas.\n\n🌟 Child-First Design: Safe intuitive layouts for small hands, star reward positive reinforcement, and a gentle soundscape.',
   tech: ['Flutter 3', 'Dart', 'BLoC State Management', 'Hive DB', 'Text-to-Speech'],
-  link: 'https://github.com/sachinsuthar04/kidzense_preschool_app',
+  link: 'https://play.google.com/store/apps/details?id=com.kidzense.app',
   image: '/projects/kidzense.png'
 },
  {
