@@ -7,9 +7,9 @@
     "preview:static": "npx serve out -l 3000"
   },
   "dependencies": {
-    "next": "16.0.1",
-    "react": "19.0.0",
-    "react-dom": "19.0.0"
+    "next": "^16.2.6",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6"
   },
   "devDependencies": {
     "@types/node": "24.10.1",
