@@ -22,8 +22,8 @@ export default function Skills() {
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           <Group title="Languages" items={skills.languages} />
           <Group title="Frameworks" items={skills.frameworks} />
-          <Group title="Mobile" items={skills.mobile} />
-  
+          <Group title="Mobile Development" items={skills.mobile} />
+          <Group title="Tools & Platforms" items={skills.tools} />
         </div>
       </div>
     </section>

@@ -32,3 +32,47 @@ body {
 .card { @apply bg-card border border-border rounded-xl shadow-card; }
 .badge { @apply inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1 text-sm text-fg; }
 .chip { @apply inline-block rounded-full border border-border px-2.5 py-0.5 text-xs text-fg; }
+
+/* Custom premium scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0f1324;
+}
+::-webkit-scrollbar-thumb {
+  background: #1f2937;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--brand);
+}
+
+/* Atmospheric floating ambient animations */
+@keyframes float {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(40px, -40px) scale(1.08); }
+}
+
+@keyframes float-delayed {
+  0%, 100% { transform: translate(0, 0) scale(1.08); }
+  50% { transform: translate(-40px, 40px) scale(1); }
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.05); }
+}
+
+.animate-float {
+  animation: float 20s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float-delayed 25s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 12s ease-in-out infinite;
+}
